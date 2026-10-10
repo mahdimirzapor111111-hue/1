@@ -1,0 +1,6 @@
+{
+  "name": "نبرد پادشاهان آنلاین",
+  "description": "بازی استراتژیک کارتی شاهنامه آنلاین و چندنفره بلادرنگ ابری - نبرد قهرمانان اساطیری، چیدمان ارتش ۶×۳، مسابقات آنلاین، اتحادیه و چت سراسری",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

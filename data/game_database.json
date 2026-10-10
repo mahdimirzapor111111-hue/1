@@ -1,0 +1,798 @@
+{
+  "users": [
+    {
+      "id": "user_admin",
+      "username": "Mahdimirzapor",
+      "password": "Mahdimirzapor",
+      "displayName": "مهدی میرزاپور (مدیر کل)",
+      "title": "👑 شاهنشاه اسطوره‌ها",
+      "bio": "جهان‌پهلوان و بنیان‌گذار دربار نبرد پادشاهان",
+      "role": "admin",
+      "level": 10,
+      "xp": 2530,
+      "gold": 10049,
+      "gems": 500,
+      "usd": 250,
+      "trophies": 2880,
+      "wins": 49,
+      "losses": 1,
+      "totalDamage": 2740,
+      "unlockedCardIds": [
+        "hero_rostam",
+        "hero_arash",
+        "hero_simurgh",
+        "hero_kaveh",
+        "hero_siyavash",
+        "hero_div_sepid",
+        "hero_sohrab",
+        "spell_atash_varjam"
+      ],
+      "activeDeck": [
+        [
+          "hero_kaveh",
+          null,
+          "hero_siyavash"
+        ],
+        [
+          "hero_arash",
+          "hero_sohrab",
+          "hero_simurgh"
+        ],
+        [
+          null,
+          "hero_rostam",
+          null
+        ]
+      ],
+      "cardProgress": {
+        "hero_rostam": {
+          "wins": 6,
+          "level": 4,
+          "xp": 450
+        },
+        "hero_arash": {
+          "wins": 3,
+          "level": 3,
+          "xp": 220
+        }
+      },
+      "campaignCompletedIndex": 3,
+      "avatar": "/assets/rostam_hero_1791041080508-hArU2IiH.jpg",
+      "createdAt": 1790766297946,
+      "lastLogin": 1791630373380,
+      "clanId": "clan_iran_lions",
+      "clanRole": "sultan",
+      "lastClanLeaveTimestamp": null,
+      "isBanned": false,
+      "banReason": "",
+      "gifts": [],
+      "eventProgress": {},
+      "defenseDeck": [
+        [
+          "hero_kaveh",
+          null,
+          "hero_siyavash"
+        ],
+        [
+          "hero_arash",
+          "hero_sohrab",
+          "hero_simurgh"
+        ],
+        [
+          null,
+          "hero_rostam",
+          null
+        ]
+      ],
+      "hasDefenseDeckSet": true,
+      "defenseWins": 21,
+      "defenseLosses": 0,
+      "unclaimedDefenseRewards": {
+        "gold": 0,
+        "gems": 0,
+        "trophies": 0,
+        "count": 0
+      },
+      "defenseMatchHistory": [],
+      "lastServerValidatedAt": 1791630373380
+    },
+    {
+      "id": "user_sohrab_champion",
+      "username": "sohrab",
+      "password": "password123",
+      "displayName": "سهراب یل",
+      "title": "⚔️ دلاور بی‌باک",
+      "bio": "در پی دیدار پدر و فتح تخت کیکاووس",
+      "role": "player",
+      "level": 3,
+      "xp": 1490,
+      "gold": 2240,
+      "gems": 40,
+      "usd": 45,
+      "trophies": 1650,
+      "wins": 16,
+      "losses": 6,
+      "totalDamage": 1220,
+      "unlockedCardIds": [
+        "hero_rostam",
+        "hero_arash",
+        "hero_siyavash",
+        "hero_simurgh",
+        "hero_kaveh"
+      ],
+      "activeDeck": [
+        [
+          "hero_siyavash",
+          null,
+          "hero_kaveh"
+        ],
+        [
+          "hero_simurgh",
+          null,
+          "hero_arash"
+        ],
+        [
+          null,
+          "hero_rostam",
+          null
+        ]
+      ],
+      "cardProgress": {
+        "hero_rostam": {
+          "wins": 3,
+          "level": 3,
+          "xp": 250
+        }
+      },
+      "campaignCompletedIndex": 2,
+      "avatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/sohrab_hero_1791041145655-CtgKH50K.jpg",
+      "createdAt": 1791112020412,
+      "lastLogin": 1791632624327,
+      "clanId": "clan_iran_lions",
+      "clanRole": "elder",
+      "lastClanLeaveTimestamp": null,
+      "defenseDeck": [
+        [
+          "hero_siyavash",
+          null,
+          "hero_kaveh"
+        ],
+        [
+          "hero_simurgh",
+          null,
+          "hero_arash"
+        ],
+        [
+          null,
+          "hero_rostam",
+          null
+        ]
+      ],
+      "hasDefenseDeckSet": true,
+      "defenseWins": 7,
+      "defenseLosses": 1,
+      "isBanned": false,
+      "banReason": "",
+      "gifts": [],
+      "eventProgress": {},
+      "unclaimedDefenseRewards": {
+        "gold": 0,
+        "gems": 0,
+        "trophies": 0,
+        "count": 0
+      },
+      "defenseMatchHistory": [],
+      "lastServerValidatedAt": 1791632624327,
+      "isOnline": true
+    },
+    {
+      "id": "user_arash_archer",
+      "username": "arash_archer",
+      "password": "password123",
+      "displayName": "آرش تیرانداز دماوند",
+      "title": "🏹 جان‌فدای مرزها",
+      "bio": "تیر من تا رود جیحون پرواز خواهد کرد",
+      "role": "player",
+      "level": 6,
+      "xp": 1100,
+      "gold": 1500,
+      "gems": 30,
+      "usd": 0,
+      "trophies": 1390,
+      "wins": 12,
+      "losses": 3,
+      "totalDamage": 820,
+      "unlockedCardIds": [
+        "hero_arash",
+        "hero_kaveh",
+        "hero_siyavash"
+      ],
+      "activeDeck": [
+        [
+          null,
+          "hero_arash",
+          null
+        ],
+        [
+          "hero_kaveh",
+          null,
+          "hero_siyavash"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "cardProgress": {
+        "hero_arash": {
+          "wins": 8,
+          "level": 4,
+          "xp": 390
+        }
+      },
+      "campaignCompletedIndex": 2,
+      "avatar": "/assets/arash_archer_1791041090715-D15b0tKP.jpg",
+      "createdAt": 1791230297946,
+      "lastLogin": 1791630373381,
+      "clanId": "clan_iran_lions",
+      "clanRole": "member",
+      "defenseDeck": [
+        [
+          null,
+          "hero_arash",
+          null
+        ],
+        [
+          "hero_kaveh",
+          null,
+          "hero_siyavash"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "hasDefenseDeckSet": true,
+      "defenseWins": 5,
+      "defenseLosses": 2,
+      "lastServerValidatedAt": 1791630373381
+    },
+    {
+      "id": "user_div_commander",
+      "username": "div_sepid",
+      "password": "password123",
+      "displayName": "سالار مازندران (دیو سپید)",
+      "title": "❄️ فرمانروای جادوی سیاه",
+      "bio": "طلسم و کولاک را به روی ارتش کیکاووس می‌بارم",
+      "role": "player",
+      "level": 8,
+      "xp": 1900,
+      "gold": 3400,
+      "gems": 75,
+      "usd": 0,
+      "trophies": 2150,
+      "wins": 28,
+      "losses": 7,
+      "totalDamage": 1840,
+      "unlockedCardIds": [
+        "hero_div_sepid",
+        "hero_kaveh",
+        "hero_siyavash",
+        "spell_atash_varjam"
+      ],
+      "activeDeck": [
+        [
+          "hero_div_sepid",
+          null,
+          null
+        ],
+        [
+          null,
+          "hero_kaveh",
+          "hero_siyavash"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "cardProgress": {
+        "hero_div_sepid": {
+          "wins": 12,
+          "level": 4,
+          "xp": 510
+        }
+      },
+      "campaignCompletedIndex": 3,
+      "avatar": "/assets/div_sepid_1791041120924-Wu3cNF6q.jpg",
+      "createdAt": 1790930297946,
+      "lastLogin": 1791615897946,
+      "clanId": null,
+      "clanRole": null,
+      "defenseDeck": [
+        [
+          "hero_div_sepid",
+          null,
+          null
+        ],
+        [
+          null,
+          "hero_kaveh",
+          "hero_siyavash"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "hasDefenseDeckSet": true,
+      "defenseWins": 14,
+      "defenseLosses": 3
+    },
+    {
+      "id": "user_kaveh_smith",
+      "username": "kaveh",
+      "displayName": "کاوه آهنگر",
+      "title": "⚒️ قیام‌گر درفش کاویان",
+      "bio": "پتک آهنگری بر سر ستمگران فرود می‌آید",
+      "role": "player",
+      "level": 4,
+      "xp": 680,
+      "gold": 950,
+      "gems": 20,
+      "usd": 20,
+      "trophies": 740,
+      "wins": 7,
+      "losses": 2,
+      "totalDamage": 430,
+      "unlockedCardIds": [
+        "hero_rostam",
+        "hero_arash",
+        "hero_kaveh"
+      ],
+      "activeDeck": [
+        [
+          null,
+          "hero_kaveh",
+          null
+        ],
+        [
+          "hero_arash",
+          null,
+          null
+        ],
+        [
+          null,
+          "hero_rostam",
+          null
+        ]
+      ],
+      "cardProgress": {},
+      "campaignCompletedIndex": 1,
+      "avatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/kaveh_smith_1791041157242-DyVfoNY2.jpg",
+      "createdAt": 1791371220412,
+      "lastLogin": 1791630423391,
+      "clanId": "clan_iran_lions",
+      "clanRole": "member",
+      "lastClanLeaveTimestamp": null,
+      "isBanned": false,
+      "banReason": "",
+      "gifts": [],
+      "eventProgress": {},
+      "defenseDeck": [
+        [
+          null,
+          "hero_kaveh",
+          null
+        ],
+        [
+          "hero_arash",
+          null,
+          null
+        ],
+        [
+          null,
+          "hero_rostam",
+          null
+        ]
+      ],
+      "hasDefenseDeckSet": true,
+      "defenseWins": 3,
+      "defenseLosses": 0,
+      "unclaimedDefenseRewards": {
+        "gold": 0,
+        "gems": 0,
+        "trophies": 0,
+        "count": 0
+      },
+      "defenseMatchHistory": [],
+      "lastServerValidatedAt": 1791630423391
+    },
+    {
+      "id": "user_player",
+      "username": "player",
+      "password": "player123",
+      "displayName": "پهلوان نوپا",
+      "title": "🛡️ مبارز تازه‌نفس",
+      "bio": "آماده برای فتح میدان‌های نبرد شاهنامه",
+      "role": "player",
+      "level": 1,
+      "xp": 0,
+      "gold": 800,
+      "gems": 15,
+      "usd": 0,
+      "trophies": 150,
+      "wins": 0,
+      "losses": 0,
+      "totalDamage": 0,
+      "unlockedCardIds": [
+        "hero_rostam",
+        "hero_arash",
+        "hero_simurgh",
+        "hero_kaveh",
+        "hero_siyavash"
+      ],
+      "activeDeck": [
+        [
+          "hero_kaveh",
+          null,
+          "hero_siyavash"
+        ],
+        [
+          "hero_arash",
+          null,
+          "hero_simurgh"
+        ],
+        [
+          null,
+          "hero_rostam",
+          null
+        ]
+      ],
+      "cardProgress": {},
+      "campaignCompletedIndex": 0,
+      "avatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/rostam_hero_1791041080508-hArU2IiH.jpg",
+      "createdAt": 1791544020412,
+      "lastLogin": 1791630423411,
+      "clanId": null,
+      "clanRole": null,
+      "lastClanLeaveTimestamp": null,
+      "isBanned": false,
+      "banReason": "",
+      "gifts": [],
+      "eventProgress": {},
+      "defenseDeck": [
+        [
+          "hero_kaveh",
+          null,
+          "hero_siyavash"
+        ],
+        [
+          "hero_arash",
+          null,
+          "hero_simurgh"
+        ],
+        [
+          null,
+          "hero_rostam",
+          null
+        ]
+      ],
+      "hasDefenseDeckSet": true,
+      "defenseWins": 0,
+      "defenseLosses": 0,
+      "unclaimedDefenseRewards": {
+        "gold": 0,
+        "gems": 0,
+        "trophies": 0,
+        "count": 0
+      },
+      "defenseMatchHistory": [],
+      "lastServerValidatedAt": 1791630423411
+    }
+  ],
+  "clans": [
+    {
+      "id": "clan_iran_lions",
+      "name": "شیران ایران‌زمین",
+      "description": "اتحادیه بزرگ پهلوانان و پادشاهان شاهنامه؛ همبستگی و قدرت در میدان نبرد",
+      "badge": "🦁",
+      "crestImage": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/clan_lion_crest_1791043063417-B2ikeaWP.jpg",
+      "sultanId": "user_admin",
+      "sultanName": "رستم دستان",
+      "requiredTrophies": 600,
+      "isClosed": false,
+      "level": 5,
+      "totalTrophies": 4800,
+      "createdAt": 1790334420412,
+      "members": [
+        {
+          "userId": "user_admin",
+          "username": "admin",
+          "displayName": "رستم دستان (مدیر)",
+          "avatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/rostam_hero_1791041080508-hArU2IiH.jpg",
+          "role": "sultan",
+          "trophies": 2380,
+          "level": 10,
+          "donations": 850,
+          "joinedAt": 1790334420412
+        },
+        {
+          "userId": "user_sohrab_champion",
+          "username": "sohrab",
+          "displayName": "سهراب یل",
+          "avatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/sohrab_hero_1791041145655-CtgKH50K.jpg",
+          "role": "elder",
+          "trophies": 1650,
+          "level": 3,
+          "donations": 520,
+          "joinedAt": 1790766420412
+        },
+        {
+          "userId": "user_kaveh_smith",
+          "username": "kaveh",
+          "displayName": "کاوه آهنگر",
+          "avatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/kaveh_smith_1791041157242-DyVfoNY2.jpg",
+          "role": "member",
+          "trophies": 800,
+          "level": 4,
+          "donations": 210,
+          "joinedAt": 1791198420412
+        }
+      ],
+      "messages": [
+        {
+          "id": "msg_1",
+          "senderId": "user_admin",
+          "senderName": "رستم دستان",
+          "senderAvatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/rostam_hero_1791041080508-hArU2IiH.jpg",
+          "senderRole": "sultan",
+          "text": "به اتحادیه شیران ایران‌زمین خوش آمدید! برای نبردهای هفتگی آماده باشید.",
+          "timestamp": 1791616020412,
+          "type": "chat"
+        },
+        {
+          "id": "msg_2",
+          "senderId": "user_sohrab_champion",
+          "senderName": "سهراب یل",
+          "senderAvatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/sohrab_hero_1791041145655-CtgKH50K.jpg",
+          "senderRole": "elder",
+          "text": "ترکیب جدید ارتش آماده است، دوستان برای دوئل دوستانه پیام دهید.",
+          "timestamp": 1791623220412,
+          "type": "chat"
+        }
+      ]
+    },
+    {
+      "id": "clan_simurgh_guard",
+      "name": "پاسداران آشیان سیمرغ",
+      "description": "رازداران کوه قاف و پر جادویی؛ خرد و درمانگری در اوج نبرد",
+      "badge": "🦅",
+      "crestImage": "/assets/clan_crest_simurgh_1791044149723-CRdhc61-.jpg",
+      "sultanId": "user_zal_champion",
+      "sultanName": "زال زر",
+      "requiredTrophies": 1000,
+      "isClosed": false,
+      "level": 4,
+      "totalTrophies": 4200,
+      "createdAt": 1790730297946,
+      "members": []
+    },
+    {
+      "id": "clan_simurgh_order",
+      "name": "فرقه سیمرغ قاف",
+      "description": "استادان جادو و شفا؛ نبرد با خرد و تاکتیک‌های برتر دفاعی",
+      "badge": "🦅",
+      "sultanId": "user_arash_archer",
+      "sultanName": "آرش کماندار",
+      "requiredTrophies": 300,
+      "isClosed": false,
+      "level": 3,
+      "totalTrophies": 1950,
+      "createdAt": 1790939220412,
+      "members": [
+        {
+          "userId": "user_arash_archer",
+          "username": "arash",
+          "displayName": "آرش کماندار",
+          "avatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/arash_archer_1791041090715-D15b0tKP.jpg",
+          "role": "sultan",
+          "trophies": 1150,
+          "level": 5,
+          "donations": 340,
+          "joinedAt": 1790939220412
+        }
+      ],
+      "messages": [
+        {
+          "id": "msg_3",
+          "senderId": "user_arash_archer",
+          "senderName": "آرش کماندار",
+          "senderAvatar": "https://ais-dev-fjjhek735xkgbn5xswolr6-761976639993.us-east1.run.app/assets/arash_archer_1791041090715-D15b0tKP.jpg",
+          "senderRole": "sultan",
+          "text": "سیمرغ پشتیبان یاران وفادار است.",
+          "timestamp": 1791626820412,
+          "type": "chat"
+        }
+      ]
+    }
+  ],
+  "chat": [
+    {
+      "id": "msg_sys_1",
+      "userId": "system",
+      "username": "دربار شاهنامه",
+      "displayName": "🛡️ جارچی سلطنتی",
+      "avatar": "/assets/btn_royal_seal_gold_1791265330862-DkSSLdlP.jpg",
+      "text": "درود بر پهلوانان و دلاوران ایران‌زمین! سرور آنلاین و چندنفره بلادرنگ «نبرد پادشاهان» با موفقیت فعال شد. به میدان نبرد خوش آمدید!",
+      "timestamp": 1791628497946,
+      "role": "admin",
+      "isSystem": true
+    },
+    {
+      "id": "msg_admin_1",
+      "userId": "user_admin",
+      "username": "Mahdimirzapor",
+      "displayName": "مهدی میرزاپور (مدیر کل)",
+      "avatar": "/assets/rostam_hero_1791041080508-hArU2IiH.jpg",
+      "text": "سلام به همه دوستان و فرماندهان گرامی! تمامی ویژگی‌ها، چیدمان دفاعی ۶×۳، مسابقات و اتحادیه کاملاً آنلاین است. هرکس آماده است وارد صف رقابت رتبه‌ای شود ⚔️👑",
+      "timestamp": 1791629397946,
+      "role": "admin"
+    },
+    {
+      "id": "msg_sohrab_1",
+      "userId": "user_sohrab_champion",
+      "username": "sohrab",
+      "displayName": "سهراب یل",
+      "avatar": "/assets/sohrab_hero_1791041145655-CtgKH50K.jpg",
+      "text": "گرز سام و تیغ بران آماده نبرد است! چیدمان دفاعی من در رده‌بندی ثبت شده، منتظر چالش پهلوانان هستم.",
+      "timestamp": 1791629997946,
+      "role": "player"
+    },
+    {
+      "userId": "test_hero",
+      "username": "آرش کمانگیر",
+      "displayName": "آرش دلاور",
+      "avatar": "/assets/rostam_hero_1791041080508-hArU2IiH.jpg",
+      "text": "سرور آنلاین عالی کار می‌کند!",
+      "role": "player",
+      "id": "msg_1791630366280_m4qr",
+      "timestamp": 1791630366280
+    },
+    {
+      "userId": "system",
+      "username": "سرور نبرد پادشاهان",
+      "displayName": "⚔️ گزارشگر میدان نبرد",
+      "avatar": "/assets/btn_duel_swords_1791042346707-CobdSmu_.jpg",
+      "text": "🏆 پیروزی حماسی! «مهدی میرزاپور (مدیر کل)» در نبرد آنلاین بر «آرش تیرانداز دماوند» غلبه کرد و 30+ کاپ به دست آورد!",
+      "role": "admin",
+      "isSystem": true,
+      "id": "msg_1791630373381_xb4h",
+      "timestamp": 1791630373381
+    }
+  ],
+  "market": [
+    {
+      "id": "mkt_usd_1",
+      "sellerId": "user_sohrab_champion",
+      "sellerName": "سهراب یل",
+      "sellerAvatar": "/assets/sohrab_hero_1791041145655-CtgKH50K.jpg",
+      "card": {
+        "id": "hero_simurgh",
+        "name": "سیمرغ حکمت",
+        "type": "mage",
+        "tier": "legendary",
+        "attack": 14,
+        "health": 32,
+        "icon": "🦅",
+        "image": "/assets/simurgh_mythic_1791041105767-1LOrFWF9.jpg"
+      },
+      "cardLevel": 2,
+      "type": "direct",
+      "currency": "usd",
+      "price": 15,
+      "currentBid": 15,
+      "bidsCount": 0,
+      "createdAt": 1791627052148,
+      "expiresAt": 1791717052148,
+      "status": "active"
+    },
+    {
+      "id": "mkt_usd_2",
+      "sellerId": "user_arash_archer",
+      "sellerName": "آرش کماندار",
+      "sellerAvatar": "/assets/arash_archer_1791041090715-D15b0tKP.jpg",
+      "card": {
+        "id": "hero_siyavash",
+        "name": "سیاوش پاک‌نهاد",
+        "type": "defender",
+        "tier": "medium",
+        "attack": 15,
+        "health": 34,
+        "icon": "🔥",
+        "image": "/assets/sohrab_hero_1791041145655-CtgKH50K.jpg"
+      },
+      "cardLevel": 3,
+      "type": "auction",
+      "currency": "usd",
+      "price": 10,
+      "currentBid": 12,
+      "highestBidderId": "user_player",
+      "highestBidderName": "پهلوان نوپا",
+      "bidsCount": 2,
+      "createdAt": 1791616252149,
+      "expiresAt": 1791702652149,
+      "status": "active"
+    },
+    {
+      "id": "mkt_1",
+      "sellerId": "user_admin",
+      "sellerName": "مهدی میرزاپور (مدیر)",
+      "sellerAvatar": "/assets/rostam_hero_1791041080508-hArU2IiH.jpg",
+      "card": {
+        "id": "hero_arash",
+        "name": "آرش کمانگیر",
+        "type": "attacker",
+        "tier": "legendary",
+        "attack": 28,
+        "health": 22,
+        "icon": "🏹",
+        "image": "/assets/arash_archer_1791041090715-D15b0tKP.jpg"
+      },
+      "cardLevel": 2,
+      "type": "direct",
+      "currency": "gold",
+      "price": 550,
+      "currentBid": 550,
+      "bidsCount": 0,
+      "createdAt": 1791623452149,
+      "expiresAt": 1791717052149,
+      "status": "active"
+    },
+    {
+      "id": "mkt_2",
+      "sellerId": "user_admin",
+      "sellerName": "مهدی میرزاپور (مدیر)",
+      "sellerAvatar": "/assets/rostam_hero_1791041080508-hArU2IiH.jpg",
+      "card": {
+        "id": "hero_sohrab",
+        "name": "سهراب دلاور",
+        "type": "attacker",
+        "tier": "legendary",
+        "attack": 26,
+        "health": 26,
+        "icon": "⚔️",
+        "image": "/assets/sohrab_hero_1791041145655-CtgKH50K.jpg"
+      },
+      "cardLevel": 3,
+      "type": "auction",
+      "currency": "gold",
+      "price": 400,
+      "currentBid": 480,
+      "highestBidderId": "user_player",
+      "highestBidderName": "پهلوان نوپا",
+      "bidsCount": 3,
+      "createdAt": 1791609052149,
+      "expiresAt": 1791695452149,
+      "status": "active"
+    }
+  ],
+  "battles": [
+    {
+      "id": "battle_1791630373381_yewa",
+      "timestamp": 1791630373381,
+      "playerUserId": "user_admin",
+      "opponentUserId": "user_arash_archer",
+      "playerWon": true,
+      "trophiesDelta": 30,
+      "damageDealt": 320
+    }
+  ],
+  "usdRequests": [],
+  "events": [],
+  "updatedAt": 1791632624729
+}

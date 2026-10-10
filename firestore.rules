@@ -1,0 +1,86 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == "mymmcallofduty@gmail.com" ||
+        request.auth.token.email == "mymmt3arena@gmail.com" ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Admin collection
+    match /admins/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Users collection: profiles, decks, stats
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+
+    // Clans collection: unions, rosters
+    match /clans/{clanId} {
+      allow read, write: if true;
+    }
+
+    // Global Chat collection
+    match /chat/{messageId} {
+      allow read, write: if true;
+    }
+
+    // Marketplace collection
+    match /market/{listingId} {
+      allow read, write: if true;
+    }
+
+    // Battles collection: PvP history & live matches
+    match /battles/{battleId} {
+      allow read, write: if true;
+    }
+
+    match /live_battles/{battleId} {
+      allow read, write: if true;
+    }
+
+    // Matchmaking live queue
+    match /matchmaking/{userId} {
+      allow read, write: if true;
+    }
+
+    // Events and Tournaments
+    match /events/{eventId} {
+      allow read, write: if true;
+    }
+
+    // Game Config (leagues, chests, stages)
+    match /config/{configDoc} {
+      allow read, write: if true;
+    }
+
+    // Purchases & transactions
+    match /purchases/{purchaseId} {
+      allow read, write: if true;
+    }
+
+    // Connectivity test doc
+    match /test/{docId} {
+      allow read, write: if true;
+    }
+  }
+}

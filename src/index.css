@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@source "../public/assets/index-WA3TFXYh.js";
+
+/* Custom Shahnameh Game Enhancements */
+* {
+  font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(18, 11, 8, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.7);
+}
+
+/* Glowing Animations */
+@keyframes royal-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.6);
+  }
+}
+
+.royal-glow {
+  animation: royal-pulse 3s infinite;
+}

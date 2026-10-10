@@ -1,0 +1,171 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "پروفایل بازیکن نبرد پادشاهان شامل امتیاز، کارت‌ها، چیدمان دفاعی و منابع",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "username": { "type": "string", "maxLength": 64 },
+        "displayName": { "type": "string", "maxLength": 64 },
+        "title": { "type": "string", "maxLength": 64 },
+        "bio": { "type": "string", "maxLength": 200 },
+        "role": { "type": "string", "enum": ["admin", "player", "moderator"] },
+        "level": { "type": "number" },
+        "xp": { "type": "number" },
+        "gold": { "type": "number" },
+        "gems": { "type": "number" },
+        "usd": { "type": "number" },
+        "trophies": { "type": "number" },
+        "wins": { "type": "number" },
+        "losses": { "type": "number" },
+        "totalDamage": { "type": "number" },
+        "unlockedCardIds": { "type": "array" },
+        "activeDeck": { "type": "array" },
+        "defenseDeck": { "type": "array" },
+        "clanId": { "type": "string" },
+        "clanRole": { "type": "string" },
+        "avatar": { "type": "string", "maxLength": 500 },
+        "updatedAt": { "type": "number" }
+      },
+      "required": ["id", "username", "displayName", "level", "trophies"]
+    },
+    "Clan": {
+      "title": "Clan",
+      "description": "اتحادیه قهرمانان و پهلوانان شاهنامه",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 64 },
+        "description": { "type": "string", "maxLength": 300 },
+        "badge": { "type": "string", "maxLength": 16 },
+        "crestImage": { "type": "string", "maxLength": 500 },
+        "sultanId": { "type": "string", "maxLength": 128 },
+        "sultanName": { "type": "string", "maxLength": 64 },
+        "requiredTrophies": { "type": "number" },
+        "level": { "type": "number" },
+        "totalTrophies": { "type": "number" },
+        "members": { "type": "array" },
+        "createdAt": { "type": "number" }
+      },
+      "required": ["id", "name", "sultanId"]
+    },
+    "ChatMessage": {
+      "title": "ChatMessage",
+      "description": "پیام‌های چت سراسری و آنلاین دربار شاهنامه",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "username": { "type": "string", "maxLength": 64 },
+        "displayName": { "type": "string", "maxLength": 64 },
+        "avatar": { "type": "string", "maxLength": 500 },
+        "text": { "type": "string", "maxLength": 500 },
+        "timestamp": { "type": "number" },
+        "role": { "type": "string" },
+        "isSystem": { "type": "boolean" }
+      },
+      "required": ["id", "userId", "text"]
+    },
+    "MarketItem": {
+      "title": "MarketItem",
+      "description": "کارت‌های عرضه شده در بازارچه آنلاین",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "sellerId": { "type": "string", "maxLength": 128 },
+        "sellerName": { "type": "string", "maxLength": 64 },
+        "sellerAvatar": { "type": "string", "maxLength": 500 },
+        "card": { "type": "object" },
+        "cardLevel": { "type": "number" },
+        "type": { "type": "string", "enum": ["direct", "auction"] },
+        "currency": { "type": "string", "enum": ["gold", "gems", "usd"] },
+        "price": { "type": "number" },
+        "currentBid": { "type": "number" },
+        "status": { "type": "string", "enum": ["active", "sold", "cancelled"] }
+      },
+      "required": ["id", "sellerId", "price", "status"]
+    },
+    "BattleRecord": {
+      "title": "BattleRecord",
+      "description": "ثبت گزارش نبردهای تن به تن آنلاین",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "playerUserId": { "type": "string", "maxLength": 128 },
+        "opponentUserId": { "type": "string", "maxLength": 128 },
+        "playerWon": { "type": "boolean" },
+        "trophiesDelta": { "type": "number" },
+        "damageDealt": { "type": "number" },
+        "timestamp": { "type": "number" }
+      },
+      "required": ["id", "playerUserId", "opponentUserId", "playerWon"]
+    },
+    "MatchmakingQueue": {
+      "title": "MatchmakingQueue",
+      "description": "صف برخط جستجوی حریف آنلاین",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "username": { "type": "string", "maxLength": 64 },
+        "displayName": { "type": "string", "maxLength": 64 },
+        "trophies": { "type": "number" },
+        "activeDeck": { "type": "array" },
+        "timestamp": { "type": "number" }
+      },
+      "required": ["userId", "trophies"]
+    },
+    "GameEvent": {
+      "title": "GameEvent",
+      "description": "رویدادها و تورنمنت‌های فعال بازی",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 128 },
+        "description": { "type": "string", "maxLength": 500 },
+        "period": { "type": "string" },
+        "rewards": { "type": "object" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "مجموعه کاربران و پهلوانان بازی نبرد پادشاهان"
+    },
+    "/clans/{clanId}": {
+      "schema": { "$ref": "#/entities/Clan" },
+      "description": "مجموعه اتحادیه‌های فعال"
+    },
+    "/chat/{messageId}": {
+      "schema": { "$ref": "#/entities/ChatMessage" },
+      "description": "پیام‌های چت همگانی"
+    },
+    "/market/{listingId}": {
+      "schema": { "$ref": "#/entities/MarketItem" },
+      "description": "فهرست کارت‌های در حال فروش در بازارچه"
+    },
+    "/battles/{battleId}": {
+      "schema": { "$ref": "#/entities/BattleRecord" },
+      "description": "آرشیو گزارش مسابقات آنلاین"
+    },
+    "/matchmaking/{userId}": {
+      "schema": { "$ref": "#/entities/MatchmakingQueue" },
+      "description": "صف زنده مسابقات آنلاین"
+    },
+    "/events/{eventId}": {
+      "schema": { "$ref": "#/entities/GameEvent" },
+      "description": "رویدادها و مسابقات ویژه"
+    },
+    "/config/{configDoc}": {
+      "schema": { "type": "object" },
+      "description": "پیکربندی بازی، لیگ‌ها و صندوق‌ها"
+    },
+    "/purchases/{purchaseId}": {
+      "schema": { "type": "object" },
+      "description": "تراکنش‌ها و خریدها"
+    }
+  }
+}

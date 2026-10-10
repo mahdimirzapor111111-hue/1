@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>نبرد پادشاهان آنلاین</title>
+    <meta name="description" content="بازی استراتژیک کارتی شاهنامه آنلاین و چندنفره بلادرنگ ابری - نبرد قهرمانان اساطیری، چیدمان ارتش ۶×۳، مسابقات آنلاین، اتحادیه و چت سراسری" />
+    <meta property="og:title" content="نبرد پادشاهان آنلاین" />
+    <meta property="og:description" content="بازی استراتژیک کارتی شاهنامه آنلاین و چندنفره بلادرنگ ابری - نبرد قهرمانان اساطیری، چیدمان ارتش ۶×۳، مسابقات آنلاین، اتحادیه و چت سراسری" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Vazirmatn for Persian typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" crossorigin href="/assets/index-C-lJ72WD.css" />
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <style>
+      body {
+        font-family: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+    </style>
+
+    <!-- Synchronous Cache Booster: Prevents empty state / black screen on cold boot -->
+    <script>
+      (function() {
+        var DEFAULT_USERS = [
+          {
+            id: 'user_admin',
+            username: 'Mahdimirzapor',
+            displayName: 'مهدی میرزاپور (مدیر کل)',
+            title: '👑 شاهنشاه اسطوره‌ها',
+            bio: 'جهان‌پهلوان و بنیان‌گذار دربار نبرد پادشاهان',
+            role: 'admin',
+            level: 10,
+            xp: 2500,
+            gold: 9999,
+            gems: 500,
+            usd: 250,
+            trophies: 2850,
+            wins: 48,
+            losses: 1,
+            totalDamage: 2420,
+            unlockedCardIds: ['hero_rostam', 'hero_arash', 'hero_simurgh', 'hero_kaveh', 'hero_siyavash', 'hero_div_sepid', 'hero_sohrab', 'spell_atash_varjam'],
+            activeDeck: [
+              ['hero_kaveh', null, 'hero_siyavash'],
+              ['hero_arash', 'hero_sohrab', 'hero_simurgh'],
+              [null, 'hero_rostam', null]
+            ],
+            defenseDeck: [
+              ['hero_kaveh', null, 'hero_siyavash'],
+              ['hero_arash', 'hero_sohrab', 'hero_simurgh'],
+              [null, 'hero_rostam', null]
+            ],
+            cardProgress: {
+              hero_rostam: { wins: 6, level: 4, xp: 450 },
+              hero_arash: { wins: 3, level: 3, xp: 220 },
+              hero_sohrab: { wins: 5, level: 3, xp: 250 }
+            },
+            campaignCompletedIndex: 3,
+            avatar: '/assets/rostam_hero_1791041080508-hArU2IiH.jpg',
+            createdAt: Date.now() - 864000000,
+            lastLogin: Date.now(),
+            clanId: 'clan_iran_lions',
+            clanRole: 'sultan',
+            hasDefenseDeckSet: true,
+            defenseWins: 21,
+            defenseLosses: 0
+          },
+          {
+            id: 'user_sohrab_champion',
+            username: 'sohrab',
+            displayName: 'سهراب یل',
+            title: '⚔️ دلاور بی‌باک',
+            bio: 'در پی دیدار پدر و فتح تخت کیکاووس',
+            role: 'player',
+            level: 7,
+            xp: 1450,
+            gold: 2200,
+            gems: 40,
+            usd: 45,
+            trophies: 1680,
+            wins: 16,
+            losses: 4,
+            totalDamage: 980,
+            unlockedCardIds: ['hero_rostam', 'hero_arash', 'hero_kaveh', 'hero_sohrab', 'hero_simurgh'],
+            activeDeck: [
+              ['hero_kaveh', null, 'hero_sohrab'],
+              ['hero_simurgh', null, 'hero_arash'],
+              [null, 'hero_rostam', null]
+            ],
+            defenseDeck: [
+              ['hero_kaveh', null, 'hero_sohrab'],
+              ['hero_simurgh', null, 'hero_arash'],
+              [null, 'hero_rostam', null]
+            ],
+            cardProgress: { hero_sohrab: { wins: 5, level: 3, xp: 250 } },
+            avatar: '/assets/sohrab_hero_1791041145655-CtgKH50K.jpg',
+            clanId: 'clan_iran_lions',
+            clanRole: 'elder',
+            hasDefenseDeckSet: true,
+            defenseWins: 8,
+            defenseLosses: 2
+          }
+        ];
+
+        try {
+          var existingUsers = localStorage.getItem('nabard_users_v3');
+          if (!existingUsers || existingUsers === '[]' || existingUsers.length < 10) {
+            localStorage.setItem('nabard_users_v3', JSON.stringify(DEFAULT_USERS));
+          }
+          var curActive = localStorage.getItem('nabard_active_user_id_v3');
+          if (!curActive) {
+            localStorage.setItem('nabard_active_user_id_v3', 'user_admin');
+          }
+        } catch (e) {
+          console.warn('Storage booster notice:', e);
+        }
+      })();
+    </script>
+
+    <!-- Real-time Multiplayer Engine -->
+    <script src="/online-multiplayer-engine.js"></script>
+
+    <!-- Firebase Master Sync -->
+    <script type="module" src="/src/firebase-sync.ts"></script>
+
+    <!-- Simurgh AI Tactical Advisor -->
+    <script type="module" src="/src/simurgh-tactical-ai.ts"></script>
+
+    <!-- React Bundled Application -->
+    <script type="module" crossorigin src="/assets/index-WA3TFXYh.js"></script>
+
+    <script>
+      // Android bridge and navigation back button fallback handler
+      window.handleAndroidBack = function() {
+        var closeBtns = document.querySelectorAll('button[title*="بستن"], button[aria-label*="بستن"], button:has(svg.lucide-x)');
+        for (var i = 0; i < closeBtns.length; i++) {
+          if (closeBtns[i].offsetParent !== null) {
+            closeBtns[i].click();
+            return true;
+          }
+        }
+        return false;
+      };
+      if (window.navigator) {
+        window.navigator.vibrate = function(pattern) {
+          if (window.AndroidBridge && window.AndroidBridge.vibrate) {
+            var ms = Array.isArray(pattern) ? (pattern[0] || 40) : (pattern || 40);
+            window.AndroidBridge.vibrate(ms);
+            return true;
+          }
+          return false;
+        };
+      }
+    </script>
+  </head>
+  <body class="bg-[#120b08] text-stone-100 select-none antialiased overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
